@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>randomuser</title>
+   <link rel="stylesheet" href="css/style.css" />
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+   <header>
+      <div class="content">
+         <select name="gender" class="select">
+            <option value="">Gender</option>
+            <option value="All">All</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+         </select>
+         <form onsubmit="return false" oninput="num.value = usernum.valueAsNumber">
+            <div class="form__content">
+               <output for="usernum" name="num" class="numout">50</output>
+               <input class='range' name="usernum" type="range" min="1" max="100" value="50" step="1">
+            </div>
+         </form>
+         <button class="generate">Generate</button>
+      </div>
+   </header>
+
+   <main class="main"></main>
+   <script src="js/scipt.js"></script>
+</body>
+
+</html>
