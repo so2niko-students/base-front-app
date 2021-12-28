@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	
+	<title>Table</title>
+
+</head>
+<body>
+
+	<header>
+		<h2>Please, choose gender and number of users.
+			Then click the "Generate" to create the table.</h2>
+		<div class="contain">
+			<select class="select_gender">
+				<option hidden>Gender</option>
+				<option>All</option>
+				<option>Male</option>
+				<option>Female</option>
+			</select>
+
+			<form onsubmit="return false" oninput="level.value = flevel.valueAsNumber + ' users'">
+				<input class="range" name="flevel" id="flying" type="range" min="0" max="100" value="50" step="1">
+				<output for="flying" name="level">50 users</output>
+			</form>
+			
+			<button class="generate_btn">Generate</button>
+		</div>
+		
+	</header>
+
+	<main class="main"></main>
+
+	<script src="https://kit.fontawesome.com/ad890a93b9.js" crossorigin='anonymous'></script>
+	<!-- Библиотека для сортировки таблицы -->
+	<!-- <script src="https://tofsjonas.github.io/sortable/sortable.js"></script> -->
+	<script src="index.js"></script>
+	
+</body>
+</html>
