@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible"
+    content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+    href="./styles.css">
+  <title>Basic Front App</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="table-wrap">
+      <nav class="main-nav">
+        <fieldset>
+          <select name="gender"
+            id="gender">
+            <option value=""
+              selected
+              disabled>Gender</option>
+            <option value="all">All</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+
+          </select>
+          <div class="range-wrap">
+            <label for="amount">50 users</label>
+            <input type="range"
+              id="amount"
+              name="amount"
+              min="0"
+              max="100">
+          </div>
+          <!-- /.range-wrap -->
+
+          <input type="submit"
+            value="Generate">
+        </fieldset>
+        <!-- /fieldset -->
+
+      </nav>
+      <!-- /.main-nav -->
+      <table>
+        <thead>
+          <tr>
+            <th>Picture</th>
+            <th class="sortable">Name <small>&#x25B2;&#x25BC;</small></th>
+            <th class="sortable">Gender <small>&#x25B2;&#x25BC;</small></th>
+            <th class="sortable">City <small>&#x25B2;&#x25BC;</small></th>
+            <th>Email</th>
+            <th class="sortable">Login <small>&#x25B2;&#x25BC;</small></th>
+            <th>Password</th>
+            <th>Nat</th>
+            <th>Age</th>
+            <th>Dob</th>
+            <th>Cell</th>
+          </tr>
+        </thead>
+        <tbody id='tableOutput'>
+        </tbody>
+      </table>
+    </div>
+    <!-- /.table-wrap -->
+  </div>
+  <!-- /.container -->
+
+  <script src="./main.js"></script>
+  <script src="./sort-columns.js"></script>
+</body>
+
+</html>

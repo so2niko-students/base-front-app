@@ -1,0 +1,150 @@
+/* ============================= =================================
+                          CSS VARIABLES
+============================= ================================= */
+:root {
+  --accent: #A7C942;
+  --accent-ligth: #EAF2D3;
+  --dark: #777777;
+  --grey: #e9e9e9;
+  --white: #fff;
+  --bold: 700;
+  --regular: 400;
+}
+
+/* ============================= =================================
+                          Fonts import
+============================= ================================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+/* ============================= =================================
+                         Global Styles
+============================= ================================= */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-family: 'Poppins', sans-serif;
+  ;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  color: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+fieldset {
+  border: none;
+  padding: 2em;
+  margin-bottom: 2em;
+  display: flex;
+  gap: 1em;
+}
+
+select,
+input[type=submit] {
+  padding: .5em 2em;
+  border: 1px solid var(--dark);
+  border-radius: 5px;
+}
+
+select:hover,
+input[type=submit]:hover {
+  cursor: pointer;
+}
+
+select {
+  background-color: var(--white);
+}
+
+select:hover {
+  background-color: var(--grey);
+}
+
+input[type=submit] {
+  border: none;
+}
+
+.hide {
+  display: none;
+}
+
+/* ============================= =================================
+                         Main Styles
+============================= ================================= */
+
+.table-wrap {
+  font-size: 1.4rem;
+  padding-top: 3em;
+}
+
+.range-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid var(--accent);
+}
+
+th {
+  padding: 1em .5em;
+  background-color: var(--accent);
+  border: 1px solid var(--accent-ligth);
+  color: var(--white);
+  text-align: left;
+}
+
+th small {
+  color: var(--dark);
+}
+
+.sortable {
+  cursor: pointer;
+}
+
+.sortable:hover small {
+  color: var(--grey);
+}
+
+td small {
+  font-size: 1.6rem;
+  font-weight: var(--bold);
+}
+
+tr:nth-child(even) {
+  background-color: var(--accent-ligth);
+}
+
+td {
+  text-align: center;
+  word-wrap: break-word;
+  border: 1px solid var(--accent);
+}
