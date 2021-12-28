@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="menu">
+        <select name="gender" id="selectGender">
+            <option value="" hidden>Gender</option>
+            <option value="All">All</option>  
+            <option value="male">male</option>      
+            <option value="female">female</option>      
+            </select>
+        <div>
+            <input type="range" value="5" min="1" max="100" id="data-range">
+        </div>
+
+
+        <input type="button" id="submitBtn" value="Generate">
+    </div>
+
+    <table id="table">
+        <thead>
+            <tr id="table-Head">
+                <th>Picture</th>
+                <th data-type="string" id="name">Name &#9650;&#9660;</th>
+                <th data-type="gender" id="gender">Gender&#9650;&#9660;
+                </th>
+                <th data-type="string" id="city">City &#9650;&#9660;</th>
+                <th id="email">Emeil </th>
+                <th data-type="string" id="login">Login &#9650;&#9660;</th>
+                <th>pasword</th>
+                <th>Nat</th>
+                <th data-type="number">Age &#9650;&#9660;</th>
+                <th>DoB</th>
+                <th>Cell</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
