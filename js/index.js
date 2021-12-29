@@ -1,1 +1,1 @@
-new DataList().startData();
+new DataList().genericSubmit();

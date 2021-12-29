@@ -13,7 +13,7 @@
     <div class="menu">
         <div class="container">
             <form class="menu__form" id="form" onsubmit="return false">
-                <select class="menu__select">
+                <select id="my-selector" class="menu__select">
                 <option selected style="display:none" value="all" >Gender</option>
                 <option value="all">All</option>
                 <option value="male">Male</option>
@@ -21,7 +21,7 @@
             </select>
                 <section>
                     <p><output name="count">50</output> users</p>
-                    <input class="menu__range" type="range" min="1" max="100" step="1" value="50" oninput="this.form.count.value = this.value">
+                    <input id="my-range" class="menu__range" type="range" min="1" max="100" step="1" value="50" oninput="this.form.count.value = this.value">
                 </section>
                 <input class="menu__submit" type="submit" value="Generic">
             </form>
@@ -46,7 +46,7 @@
                     </tr>
 
                 </thead>
-                <tbody class=" table__tbody ">
+                <tbody id="my_tbody" class="table__tbody">
                 </tbody>
             </table>
         </div>
