@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Generate Data</title>
+</head>
+
+<body>
+
+    <div class="menu">
+        <div class="container">
+            <form class="menu__form" id="form" onsubmit="return false">
+                <select id="my-selector" class="menu__select">
+                <option selected style="display:none" value="all" >Gender</option>
+                <option value="all">All</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+                <section>
+                    <p><output name="count">50</output> users</p>
+                    <input id="my-range" class="menu__range" type="range" min="1" max="100" step="1" value="50" oninput="this.form.count.value = this.value">
+                </section>
+                <input class="menu__submit" type="submit" value="Generic">
+            </form>
+        </div>
+    </div>
+    <div class="result-data">
+        <div class="container">
+            <table id="tableData" class="result-data__table">
+                <thead>
+                    <tr>
+                        <th>Picture</th>
+                        <th>Name <img src="img/arrow.svg" alt="arrow" onclick="sortTableByColumn(event)"></th>
+                        <th>Gender <img src="img/arrow.svg" alt="arrow" onclick="sortTableByColumn(event)"></th>
+                        <th>City <img src="img/arrow.svg" alt="arrow" onclick="sortTableByColumn(event)"></th>
+                        <th>Email</th>
+                        <th>Login <img src="img/arrow.svg" alt="arrow" onclick="sortTableByColumn(event)"></th>
+                        <th>Password</th>
+                        <th>Nat</th>
+                        <th>Age</th>
+                        <th>DoB</th>
+                        <th>Cell</th>
+                    </tr>
+
+                </thead>
+                <tbody id="my_tbody" class="table__tbody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/data-service.js "></script>
+    <script src="js/data-list.js "></script>
+    <script src="js/table-sort.js"></script>
+    <script src="js/index.js "></script>
+
+</body>
+
+</html>

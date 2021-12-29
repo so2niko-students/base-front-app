@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --main-color-background: #A7C941;
+    --color-tex-thead: #FFFFFF;
+    --color-background-row: #E9F2D3;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.menu {
+    margin-top: 50px;
+}
+
+.menu__form {
+    display: flex;
+}
+
+.menu__form>* {
+    margin-right: 15px;
+}
+
+.menu__select {
+    width: 190px;
+    height: 45px;
+}
+
+.menu__form section input {
+    width: 190px;
+}
+
+.menu__submit {
+    width: 130px;
+    border-radius: 10px;
+    border-width: 0;
+}
+
+.result-data {
+    margin-top: 50px;
+}
+
+.result-data__table,
+th,
+td {
+    border: 2px solid var(--main-color-background);
+    border-collapse: collapse;
+}
+
+th,
+td {
+    text-align: start;
+    padding-left: 5px;
+}
+
+.result-data__table {
+    width: 100%;
+}
+
+.result-data__table thead {
+    background-color: var(--main-color-background);
+    color: var(--color-tex-thead);
+}
+
+.table__tbody tr:nth-child(2n) {
+    background-color: var(--color-background-row);
+}
