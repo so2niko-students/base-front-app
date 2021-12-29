@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Base front app</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container d-flex">
+      <form>
+        <div class="col-auto">
+          <label for="gender">Gender:</label>
+          <select class="form-select" id="gender" name="gender">
+            <option value="all">all</option>
+            <option value="male">male</option>
+            <option value="female">female</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label class="form-label" id="usersLabel" for="users"></label>
+          <input
+            class="form-range"
+            type="range"
+            id="users"
+            name="users"
+            min="1"
+            max="100"
+            step="1"
+            value="1"
+          />
+        </div>
+        <!-- oninput="this.nextElementSibling.value = this.value" 
+        <input type="button" value="50"> users.
+        <input type="submit" value="Generate" onclick="generateTable()"> -->
+      </form>
+    </div>
+    <div class="container d-flex">
+      <button class="btn btn-primary" id="myBtn">Generate</button>
+    </div>
+    <div class="container table-responsive">
+      <table class="table" id="myTable">
+        <thead>
+          <tr>
+            <th scope="col">Picture</th>
+            <th id="sortName" scope="col">Name&#9650;&#9660;</th>
+            <th id="sortGender" scope="col">Gender&#9650;&#9660;</th>
+            <th id="sortCity" scope="col">City&#9650;&#9660;</th>
+            <th scope="col">Email</th>
+            <th id="sortLogin" scope="col">Login&#9650;&#9660;</th>
+            <th scope="col">Password</th>
+            <th scope="col">Nat</th>
+            <th scope="col">Age</th>
+            <th scope="col">DoB</th>
+            <th scope="col">Cell</th>
+          </tr>
+        </thead>
+        <tbody id="output"></tbody>
+      </table>
+    </div>
+    <!-- <div class="container">
+          <h1 class="display-4 mt-3">Fetch API</h1>
+          <button class="btn btn-primary" id="myBtn">Generate</button>
+      </div> -->
+    <script src="script.js"></script>
+  </body>
+</html>
