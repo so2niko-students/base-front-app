@@ -57,7 +57,14 @@ tr:nth-child(even) {
 }
 
 .select_gender_error {
-	border-color: red
+	border-color: red;
+	border-radius: 3px;
+	box-shadow: 5px 5px 5px -2px rgb(209, 73, 60);
+}
+
+.fa-exclamation-circle {
+	margin: auto 5px;
+	color: red
 }
 
 

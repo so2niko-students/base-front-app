@@ -2,13 +2,15 @@ const generateBtn = document.querySelector('.generate_btn');
 const selectGender = document.querySelector('.select_gender');
 const range = document.querySelector('.range');
 
-range.addEventListener('change', function () {
-    return numberOfUsers = this.value
-});
+// range.addEventListener('change', function () {
+//     return numberOfUsers = this.value
+// });
 
 generateBtn.addEventListener('click', generateTable);
 
 function createTable(data) {
+
+    document.querySelector('.main').innerHTML = '';
 
     let table = document.createElement('table');
     // table.classList.add('sortable'); Класс для работы библиотеки
@@ -54,7 +56,7 @@ function createTable(data) {
                         <td>${dataOfUser.cell}</td>` 
     }
 
-    document.querySelector('main').appendChild(table);
+    document.querySelector('.main').appendChild(table);
 
     sortRows();
 }
@@ -67,6 +69,8 @@ function generateTable() {
         selectGender.classList.remove('select_gender_error');
     }
 
+    const numberOfUsers = document.querySelector('input').value;
+ 
     switch (selectGender.value) {
         case 'All': {
             fetch(`https://randomuser.me/api/?results=${numberOfUsers}`)
