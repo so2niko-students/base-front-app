@@ -1,0 +1,90 @@
+h2 {
+	text-align: center;
+}
+
+.contain {
+	display: flex;
+	justify-content: start;
+	margin-bottom: 30px;
+}
+
+.contain>* {
+	margin: 10px 20px;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table, th, td {
+	padding: 5px 10px;
+	border: 1px solid #9fc329;
+}
+
+th {
+	background: #a8ca40; 
+	color: #fff;
+}
+td {
+	text-align: center;
+}
+
+/* ---Класс для исключения сортировки--- */
+th.no-sort {
+	pointer-events: none;
+  }
+/* -------------------------------------- */
+tr:nth-child(even) {
+	background: #ebf2d4; 
+}
+
+.generate_btn {
+	background-color: rgb(165, 248, 227);
+	font-size: 1rem;
+	border-radius: 5px;
+	padding: 2px 15px;
+	box-shadow: 5px 5px 5px -2px cadetblue;
+}
+
+.fa-mars {
+	color: #3499f2;
+	font-size: 1.3rem
+}
+
+.fa-venus {
+	color: #f5528d;
+	font-size: 1.3rem
+}
+
+.select_gender_error {
+	border-color: red;
+	border-radius: 3px;
+	box-shadow: 5px 5px 5px -2px rgb(209, 73, 60);
+}
+
+.fa-exclamation-circle {
+	margin: auto 5px;
+	color: red
+}
+
+
+
+
+th.sorted[data-order="1"],
+th.sorted[data-order="-1"] {
+    position: relative;
+}
+
+th.sorted[data-order="1"]::after,
+th.sorted[data-order="-1"]::after {
+    right: 8px;
+    position: absolute;
+}
+
+th.sorted[data-order="-1"]::after {
+	content: "▼"
+}
+
+th.sorted[data-order="1"]::after {
+	content: "▲"
+}
