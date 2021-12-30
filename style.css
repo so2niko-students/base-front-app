@@ -1,0 +1,75 @@
+ /* table style */
+ 
+ #table-Head {
+     background: rgb(0, 163, 41);
+     color: white;
+     border: 1px solid rgb(0, 163, 41);
+ }
+ 
+ #table th {
+     border: 1px solid rgb(0, 163, 41);
+ }
+ 
+ #table td {
+     border: 1px solid rgb(0, 163, 41);
+ }
+ 
+ #table thead th {
+     justify-content: space-between;
+ }
+ 
+ .green-tr {
+     background: rgba(0, 255, 0, 0.301);
+ }
+ 
+ #table {
+     border-spacing: 0;
+     border: 1px solid rgb(0, 163, 41);
+     margin: 0 auto;
+     min-width: 1200px;
+ }
+ 
+ #table thead tr th:hover {
+     color: rgba(0, 255, 0, 0.76);
+     transition: 0.2s;
+     cursor: pointer;
+ }
+ /* menu style */
+ 
+ .menu {
+     display: flex;
+     justify-content: center;
+     margin-bottom: 20px;
+ }
+ 
+ #selectGender {
+     width: 200px;
+     height: 30px;
+     outline: none;
+ }
+ 
+ #submitBtn {
+     background-color: rgb(0, 163, 41);
+     height: 30px;
+     border-radius: 5px;
+     margin-left: 20px;
+     outline: none;
+     border: none;
+ }
+ 
+ #submitBtn:hover {
+     background: rgba(0, 255, 0, 0.301);
+     transition: 0.5s;
+ }
+ 
+ #range {
+     margin-left: 20px;
+ }
+ 
+ #data-range {
+     text-align: center;
+ }
+ 
+ #range p {
+     margin: 0;
+ }
