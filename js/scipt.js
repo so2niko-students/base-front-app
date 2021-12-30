@@ -1,7 +1,12 @@
 const generateButton = document.querySelector('.generate');
 let select = document.querySelector('.select');
 let arrayTh = document.querySelectorAll('th');
+let form = document.querySelector('form');
+let input = document.querySelector('.range')
+let output = document.querySelector('.numout')
 
+form.addEventListener('submit', () => false);
+form.addEventListener('input', () => output.value = +input.value);
 
 select.addEventListener('click', function () {
    if (select.value === '') select.classList.remove('select__error');
