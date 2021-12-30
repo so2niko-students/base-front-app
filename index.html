@@ -17,8 +17,9 @@
             <option value="male">male</option>      
             <option value="female">female</option>      
             </select>
-        <div>
-            <input type="range" value="5" min="1" max="100" id="data-range">
+        <div id="range">
+            <input type="range" value="0" min="1" max="100" id="data-range">
+            <p id="range-counter"></p>
         </div>
 
 
@@ -33,13 +34,13 @@
                 <th data-type="gender" id="gender">Gender&#9650;&#9660;
                 </th>
                 <th data-type="string" id="city">City &#9650;&#9660;</th>
-                <th id="email">Emeil </th>
+                <th data-type="string" id="email">Emeil </th>
                 <th data-type="string" id="login">Login &#9650;&#9660;</th>
-                <th>pasword</th>
-                <th>Nat</th>
+                <th data-type="string">pasword</th>
+                <th data-type="string">Nat</th>
                 <th data-type="number">Age &#9650;&#9660;</th>
-                <th>DoB</th>
-                <th>Cell</th>
+                <th data-type="string">DoB</th>
+                <th data-type="string">Cell</th>
             </tr>
         </thead>
         <tbody></tbody>
