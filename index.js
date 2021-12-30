@@ -125,15 +125,15 @@ function sortTable(n) {
   }
 }
 
-document.querySelectorAll(".sort").onclick = () => {
+document.querySelector(".sort-names").onclick = () => {
   sortTable(1);
 };
-document.querySelectorAll(".sort").onclick = () => {
+document.querySelector(".sort-genders").onclick = () => {
   sortTable(2);
 };
-document.querySelectorAll(".sort").onclick = () => {
+document.querySelector(".sort-cities").onclick = () => {
   sortTable(3);
 };
-document.querySelectorAll(".sort").onclick = () => {
+document.querySelector(".sort-logins").onclick = () => {
   sortTable(5);
 };
