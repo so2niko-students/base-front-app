@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  margin: 0 auto;
+  width: 75%;
+  max-width: 1000px;
+  text-align: center;
+}
