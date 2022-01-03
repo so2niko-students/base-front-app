@@ -1,9 +1,9 @@
 const generateButton = document.querySelector('.generate');
-let select = document.querySelector('.select');
-let arrayTh = document.querySelectorAll('th');
-let form = document.querySelector('form');
-let input = document.querySelector('.range')
-let output = document.querySelector('.numout')
+const select = document.querySelector('.select');
+const arrayTh = document.querySelectorAll('th');
+const form = document.querySelector('form');
+const input = document.querySelector('.range')
+const output = document.querySelector('.numout')
 
 form.addEventListener('submit', () => false);
 form.addEventListener('input', () => output.value = +input.value);
