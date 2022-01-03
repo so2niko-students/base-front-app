@@ -12,17 +12,25 @@
   <body>
     <section>
       <div class="table-wrapper">
-        <select name="gender" class="gender" id="gender">
-          <option>Gender</option>
-          <option value="all">All</option>
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-        </select>
-        <div class="range-wrapper">
-          <label class="user-amount" for="amount">50 users</label>
-          <input type="range" class="amount" name="amount" min="0" max="100" />
+        <div class="input-wrapper">
+          <select name="gender" class="gender" id="gender">
+            <option>Gender</option>
+            <option value="all">All</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+          <div class="range-wrapper">
+            <label class="user-amount" for="amount">50 users</label>
+            <input
+              type="range"
+              class="amount"
+              name="amount"
+              min="0"
+              max="100"
+            />
+          </div>
+          <input class="submit-button" type="submit" value="Generate" />
         </div>
-        <input class="submit-button" type="submit" value="Generate" />
         <table class="sortable-table">
           <thead>
             <tr>
