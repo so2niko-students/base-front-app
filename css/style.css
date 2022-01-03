@@ -1,0 +1,192 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+html {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+header,
+main {
+  margin: 30px;
+}
+
+table {
+  border-spacing: 0;
+}
+
+thead {
+  background-color: #a7c942;
+  color: white;
+}
+
+thead > tr > th:nth-child(3) {
+  padding-right: 25px;
+}
+
+thead > tr > th:nth-child(2),
+th:nth-child(3),
+th:nth-child(4),
+th:nth-child(6) {
+  cursor: pointer;
+}
+
+thead > tr > th:nth-child(2)::after,
+th:nth-child(3)::after,
+th:nth-child(4)::after,
+th:nth-child(6)::after {
+  content: " ";
+  position: absolute;
+  width: 25px;
+  height: 15px;
+  background: url("/img/two_tri.png") no-repeat;
+  background-size: 20px;
+  background-position: 4px -2px;
+}
+
+thead > tr > th:nth-child(2).active::after,
+th:nth-child(3).active::after,
+th:nth-child(4).active::after,
+th:nth-child(6).active::after {
+  -webkit-transform: scale(1, -1);
+      -ms-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+tr {
+  position: relative;
+}
+
+tr:nth-child(even) {
+  background-color: #eaf2d3;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 5px;
+  font-weight: normal;
+}
+
+td {
+  border: 1px solid #a7c942;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.range {
+  cursor: pointer;
+}
+
+.select {
+  cursor: pointer;
+  padding: 15px 60px 15px 10px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url("/img/down-arrow.png") center right 10px no-repeat;
+  background-size: 20px;
+}
+
+.select__error {
+  border-color: red;
+}
+
+.form__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.generate {
+  background-color: #e6e6e6;
+  padding: 15px 35px;
+  border-radius: 5px;
+}
