@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  margin: 0 auto;
+  width: 75%;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.input-wrapper {
+  display: flex;
+  margin: 10px 0;
+}
+
+.input-wrapper > * {
+  padding: 5px 10px;
+}
+
+th {
+  background-color: #a7c942;
+  color: #fff;
+  font-weight: 500;
+  padding: 0 5px;
+}
+
+tr:nth-child(even) {
+  background-color: #eaf2d3;
+}
+
+img {
+  width: 100%;
+}
