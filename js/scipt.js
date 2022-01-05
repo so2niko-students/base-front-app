@@ -4,6 +4,7 @@ const arrayTh = document.querySelectorAll('th');
 const form = document.querySelector('form');
 const input = document.querySelector('.range')
 const output = document.querySelector('.numout')
+let selectValue;
 
 form.addEventListener('submit', () => false);
 form.addEventListener('input', () => output.value = +input.value);
@@ -13,6 +14,7 @@ select.addEventListener('click', function () {
 })
 
 generateButton.addEventListener('click', function () {
+   selectValue = select.value;
    const selectGender = select.value;
    if (selectGender === '') {
       select.classList.add('select__error');
@@ -72,38 +74,42 @@ function createTable(number, data) {
    });
 
    function tableSortFunc() {
+      if (this.classList.contains('gender') && selectValue !== 'All') {
+         return;
+      }
       this.classList.toggle('active');
+
       const direction = this.classList.contains('active') ? 1 : -1;
       let pref = 0;
 
-      /*    switch (true) {
-            case (this.classList.contains('name')): {
-               pref = 1;
-               break;
-            }
-            case (this.classList.contains('gender')): {
-               pref = 2;
-               break;
-            }
-            case (this.classList.contains('city')): {
-               pref = 3;
-               break;
-            }
-            case (this.classList.contains('login')): {
-               pref = 5;
-               break;
-            }
-         } */
+      switch (true) {
+         case (this.classList.contains('name')): {
+            pref = 1;
+            break;
+         }
+         case (this.classList.contains('gender') && selectValue === 'All'): {
+            pref = 2;
+            break;
+         }
+         case (this.classList.contains('city')): {
+            pref = 3;
+            break;
+         }
+         case (this.classList.contains('login')): {
+            pref = 5;
+            break;
+         }
+      }
 
-      const classesCount = {
-         name: 1,
-         gender: 2,
-         city: 3,
-         login: 5
-      };
+      /*  const classesCount = {
+          name: 1,
+          gender: 2,
+          city: 3,
+          login: 5
+       };
 
       const className = this.className.replace('sort', '').replace('active', '').trim();
-      pref = classesCount[className]
+      pref = classesCount[className] */
       let sortedRows = sortRows(pref, direction);
       table.append(...sortedRows);
 
